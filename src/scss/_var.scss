@@ -1,0 +1,14 @@
+$brown: #6c3c2e;
+$white: #c0a98b;
+$dark: #372b24;
+$gray: #84746c;
+$green: #8c846c;
+
+$text_white: #fff;
+
+
+@mixin flex-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

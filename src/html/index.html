@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>depo</title>
+</head>
+
+<body>
+    <header>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img class="slider__img" src="@img/house.jpeg" alt="">
+                    <h2 class="slider__title">Какой-то текст ствязан с домами</h2>
+                    <a href="#" class="slider__btn">Заказать</a>
+                </div>
+                <div class="swiper-slide">
+                    <img class="slider__img" src="@img/kamin.jpg" alt="">
+                    <h2 class="slider__title">Какой-то текст ствязан с каминами</h2>
+                    <a href="#" class="slider__btn">Заказать</a>
+                </div>
+                <div class="swiper-slide">
+                    <img class="slider__img" src="@img/zabor.jpg" alt="">
+                    <h2 class="slider__title">Какой-то текст ствязан с заборами</h2>
+                    <a href="#" class="slider__btn">Заказать</a>
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+        </div>
+
+        <div class="nav__wrapper">
+
+            <div class="nav__inner">
+                <p class="header__logo">КИРПИЧНОЕ<br />ДЕПО</p>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                Заказать
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="header__btn">Обратный звонок</button>
+            </div>
+
+
+
+        </div>
+
+    </header>
+    <main>
+        <section class="products">
+            <div class="container">
+                <h2 class="text-4xl font-bold text-center">Наши продукты</h2>
+
+                <div class="products__wrapper">
+                    <div class="products__card text-center">
+                        <img class="products__img" src="@img/materials/stone1.jpg" alt="">
+                        <h3 class="text-2xl font-bold uppercase">печной</h3>
+                        <!-- <p class="products__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+                            exercitationem at corporis neque consectetur illum molestias deleniti dolore, illo esse?</p> -->
+                    </div>
+
+                    <!-- <div class="card">
+                        <img class="products__img" src="@img/materials/stone1.jpg" alt="">
+                        <h3 class="text-2xl font-bold uppercase">ПЕЧНОЙ</h3>
+                        <div class="card__content">
+                            <p class="card__title">Основные зарактеристики продукта:</p>
+                            <ul class="card__list">
+                                <li>Марка прочности</li>
+                                <li>Размер в мм</li>
+                                <li>Вес 1 шт</li>
+                                <li>Количество шт в кубе</li>
+                                <li>Кол-во шт в м2 кладки</li>
+                                <li>Цена за 1 шт/куб/м2</li>
+                            </ul>
+                            <p class="card__description">
+                            </p>
+                        </div>
+                    </div> -->
+                    <div class="card">
+                        <img class="products__img" src="@img/materials/stone2.jpg" alt="">
+                        <h3 class="card__text text-2xl font-bold uppercase">ОБЛИЦОВОЧНЫЙ</h3>
+                        <div class="card__content">
+                            <p class="card__title">Основные зарактеристики продукта:</p>
+                            <ul class="card__list">
+                                <li>Марка прочности</li>
+                                <li>Размер в мм</li>
+                                <li>Вес 1 шт</li>
+                                <li>Количество шт в кубе</li>
+                                <li>Кол-во шт в м2 кладки</li>
+                                <li>Цена за 1 шт/куб/м2</li>
+                            </ul>
+                            <a href="@img/materials/stone3.jpg" class="button" download="@img/materials/stone2.jpg">
+
+                                <img class="button__icon" src="@img/icons/download.png" alt="">
+                            </a>
+                            <p class="card__description">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="products__img" src="@img/materials/stone3.jpg" alt="">
+                        <h3 class="card__text text-2xl font-bold uppercase">ОБЛИЦОВОЧНЫЙ</h3>
+                        <div class="card__content">
+                            <p class="card__title">Основные зарактеристики продукта:</p>
+                            <ul class="card__list">
+                                <li>Марка прочности</li>
+                                <li>Размер в мм</li>
+                                <li>Вес 1 шт</li>
+                                <li>Количество шт в кубе</li>
+                                <li>Кол-во шт в м2 кладки</li>
+                                <li>Цена за 1 шт/куб/м2</li>
+                            </ul>
+                            <a href="@img/materials/stone2.jpg" class="button" download="@img/materials/stone2.jpg">
+
+                                <img class="button__icon" src="@img/icons/download.png" alt="">
+                            </a>
+                            <p class="card__description">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="products__img" src="@img/house.jpeg" alt="">
+                        <h3 class="card__text text-2xl font-bold uppercase">проект дома</h3>
+                        <div class="card__content">
+                            <p class="card__title">Основные зарактеристики продукта:</p>
+                            <ul class="card__list">
+                                <li>Марка прочности</li>
+                                <li>Размер в мм</li>
+                                <li>Вес 1 шт</li>
+                                <li>Количество шт в кубе</li>
+                                <li>Кол-во шт в м2 кладки</li>
+                                <li>Цена за 1 шт/куб/м2</li>
+                            </ul>
+                            <a href="@img/materials/stone2.jpg" class="button" download="@img/materials/stone2.jpg">
+
+                                <img class="button__icon" src="@img/icons/download.png" alt="">
+                            </a>
+                            <p class="card__description">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="products__img" src="@img/zabor.jpg" alt="">
+                        <h3 class="card__text text-2xl font-bold uppercase">проект забора
+                        </h3>
+                        <div class="card__content">
+                            <p class="card__title">Основные зарактеристики продукта:</p>
+                            <ul class="card__list">
+                                <li>Марка прочности</li>
+                                <li>Размер в мм</li>
+                                <li>Вес 1 шт</li>
+                                <li>Количество шт в кубе</li>
+                                <li>Кол-во шт в м2 кладки</li>
+                                <li>Цена за 1 шт/куб/м2</li>
+                            </ul>
+                            <a href="@img/materials/stone2.jpg" class="button" download="@img/materials/stone2.jpg">
+
+                                <img class="button__icon" src="@img/icons/download.png" alt="">
+                            </a>
+                            <p class="card__description">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="products__img" src="@img/kamin.jpg" alt="">
+                        <h3 class="card__text text-2xl font-bold uppercase">проект печи</h3>
+                        <div class="card__content">
+                            <p class="card__title">Основные зарактеристики продукта:</p>
+                            <ul class="card__list">
+                                <li>Марка прочности</li>
+                                <li>Размер в мм</li>
+                                <li>Вес 1 шт</li>
+                                <li>Количество шт в кубе</li>
+                                <li>Кол-во шт в м2 кладки</li>
+                                <li>Цена за 1 шт/куб/м2</li>
+                            </ul>
+                            <a href="@img/materials/stone2.jpg" class="button" download="@img/materials/stone2.jpg">
+
+                                <img class="button__icon" src="@img/icons/download.png" alt="">
+                            </a>
+                            <p class="card__description">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="order">
+            <div class="container">
+                <h2 class="text-4xl font-bold text-center">Почему стоит заказать у нас?</h2>
+
+                <div class="order__advantages">
+                    <div class="order__card rounded-2xl w-xs text-center">
+                        <img class="order__img" src="@img/icons/car_contacts.png" alt="">
+                        <h3 class="text-2xl font-bold">You Use Your Property</h3>
+                        <p class="order__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+                            exercitationem at corporis neque consectetur illum molestias deleniti dolore, illo esse?</p>
+                    </div>
+                    <div class="order__card rounded-2xl w-xs text-center">
+                        <img class="order__img" src="@img/icons/car_contacts.png" alt="">
+                        <h3 class="text-2xl font-bold">You Use Your Property</h3>
+                        <p class="order__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+                            exercitationem at corporis neque consectetur illum molestias deleniti dolore, illo esse?</p>
+                    </div>
+                    <div class="order__card rounded-2xl w-xs text-center">
+                        <img class="order__img" src="@img/icons/car_contacts.png" alt="">
+                        <h3 class="text-2xl font-bold">You Use Your Property</h3>
+                        <p class="order__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+                            exercitationem at corporis neque consectetur illum molestias deleniti dolore, illo esse?</p>
+                    </div>
+                </div>
+
+                <div class="order__form-wrapper">
+                    <div class="order__left">
+                        <h2 class="text-xl font-bold uppercase">Не можете определится?</h2>
+                        <p class="text-xl uppercase">поможем подобрать идеальный вариант</p>
+                        <p class="">Оставьте свои контакты и мы свяжемся с вами</p>
+                    </div>
+
+                    <form class="order__form">
+                        <input id="name" type="text" placeholder="Ваше имя" class="order__input">
+                        <input id="phone" type="text" placeholder="Ваш телефон" class="order__input">
+
+
+                        <button class="order__btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2 class="faq__title text-4xl font-bold text-center text-white">ВОПРОСЫ/ОТВЕТЫ</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <input type="radio" id="section1" name="accordion" />
+                        <label for="section1" class="accordion-header">
+                            <label class="accordion-title">Предоставляете ли вы гарантии ? </label>
+                            <div class="accordion-icon">
+                                <svg viewBox="0 0 16 16" fill="none" height="16" width="16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </label>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis tempore iusto cumque
+                                magnam fugiat illum totam facilis quisquam pariatur quos!</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <input checked="" type="radio" id="section2" name="accordion" />
+                        <label for="section2" class="accordion-header">
+                            <label class="accordion-title">Возможна ли поэтапная оплата работ?</label>
+                            <div class="accordion-icon">
+                                <svg viewBox="0 0 16 16" fill="none" height="16" width="16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </label>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis!</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <input type="radio" id="section3" name="accordion" />
+                        <label for="section3" class="accordion-header">
+                            <label class="accordion-title">Нужно ли вносить предоплату перед началом работ?</label>
+                            <div class="accordion-icon">
+                                <svg viewBox="0 0 16 16" fill="none" height="16" width="16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </label>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, necessitatibus nulla.
+                                Repellat earum, doloribus enim tempore quos aspernatur odit quod accusantium ratione
+                                nihil ducimus maiores fugit esse ipsam reiciendis, provident harum commodi veniam
+                                molestiae a exercitationem sequi beatae iure? Harum?</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <input type="radio" id="section4" name="accordion" />
+                        <label for="section4" class="accordion-header">
+                            <label class="accordion-title">Предоставляете ли вы гарантии ? </label>
+                            <div class="accordion-icon">
+                                <svg viewBox="0 0 16 16" fill="none" height="16" width="16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </label>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis tempore iusto cumque
+                                magnam fugiat illum totam facilis quisquam pariatur quos!</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <input checked="" type="radio" id="section5" name="accordion" />
+                        <label for="section5" class="accordion-header">
+                            <label class="accordion-title">Возможна ли поэтапная оплата работ?</label>
+                            <div class="accordion-icon">
+                                <svg viewBox="0 0 16 16" fill="none" height="16" width="16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </label>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis!</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <input type="radio" id="section6" name="accordion" />
+                        <label for="section6" class="accordion-header">
+                            <label class="accordion-title">Нужно ли вносить предоплату перед началом работ?</label>
+                            <div class="accordion-icon">
+                                <svg viewBox="0 0 16 16" fill="none" height="16" width="16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.293 5.293a1 1 0 0 1 1.414 0L8 7.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 0-1.414z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </label>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, necessitatibus nulla.
+                                Repellat earum, doloribus enim tempore quos aspernatur odit quod accusantium ratione
+                                nihil ducimus maiores fugit esse ipsam reiciendis, provident harum commodi veniam
+                                molestiae a exercitationem sequi beatae iure? Harum?</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__nav">
+                <nav class="header__nav">
+                    <ul class="header__nav-list text-white">
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">
+                                Заказать
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+           
+            <h3 class="footer__title text-xl font-bold text-center text-white">Компания "КИРПИЧНОЕ ДЕПО"</h3>
+            <p class="footer__subtitle text-sm text-center text-white">КИРПИЧИ. ДОМА. ПЕЧИ</p>
+           
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

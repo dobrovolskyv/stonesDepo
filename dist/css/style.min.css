@@ -1,0 +1,366 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  background-color: #c0a98b;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.swiper {
+  width: 100%;
+  height: 600px;
+}
+
+.slider__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: #c0a98b;
+  color: #fff;
+  max-width: 300px;
+  font-size: 35px;
+}
+
+.slider__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-shadow: 0 0 10px #6c3c2e;
+  font-weight: 700;
+  color: #fff;
+  max-width: 700PX;
+  width: 100%;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.nav__wrapper {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  max-width: 1200px;
+  width: 100%;
+}
+.nav__inner {
+  padding: 20px 40px;
+  background: #6c3c2e;
+  border-radius: 12px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.header__nav-item:hover {
+  color: #8c846c;
+}
+.header__btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: #8c846c;
+  color: #fff;
+  cursor: pointer;
+}
+
+.products {
+  margin-top: 100px;
+  color: #fff;
+}
+.products__wrapper {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.products__card {
+  background: #372b24;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 12px;
+}
+.products__img {
+  max-width: 300px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.products__descr {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* From Uiverse.io by gharsh11032000 */
+.card {
+  position: relative;
+  padding: 10px;
+  background-color: #372b24;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5019607843);
+  transition: all 0.6s;
+}
+
+.card__text {
+  margin-top: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: #fff6f6;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.4s;
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+  border: 1px solid transparent;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__list {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.button {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.button__icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.order {
+  background-color: #6c3c2e;
+  margin-top: 100px;
+  min-height: 550px;
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+}
+.order__advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.order__card {
+  background: #372b24;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.order__descr {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.order__form-wrapper {
+  position: absolute;
+  bottom: -150px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  width: 100%;
+  background: #372b24;
+  border-radius: 12px;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order__left {
+  max-width: 300px;
+}
+.order__left > p {
+  margin-top: 10px;
+}
+.order__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 350px;
+  width: 100%;
+}
+.order__input {
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: #84746c;
+  color: #fff;
+  width: 100%;
+}
+.order__input::placeholder {
+  color: #fff;
+}
+.order__btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: #8c846c;
+  color: #fff;
+  width: 100%;
+}
+.order__btn:hover {
+  background-color: #6c3c2e;
+}
+
+.faq {
+  margin-top: 150px;
+}
+.faq__title {
+  margin-bottom: 40px;
+}
+
+.accordion {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  margin-bottom: 5px;
+  border-radius: 12px;
+}
+
+.accordion-item .content {
+  font-size: 18px;
+}
+
+.accordion input[type=radio] {
+  display: none;
+}
+
+.accordion .content {
+  height: 0px;
+  padding: 0px;
+  background-color: #fafafa;
+  border-top: 1px solid #ccc;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion input[type=radio]:checked + .accordion-header + .content {
+  height: auto;
+  padding: 15px;
+}
+
+.accordion-icon {
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.accordion input[type=radio]:checked + .accordion-header .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #6c3c2e;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: left;
+  border-radius: 6px 6px 0 0;
+  color: #fff;
+}
+
+.accordion-header .accordion-title {
+  font-size: 22px;
+  line-height: 100%;
+}
+
+.footer {
+  margin-top: 160px;
+  background-color: #6c3c2e;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.footer__nav {
+  margin: 0px auto 30px;
+  max-width: 600px;
+}
