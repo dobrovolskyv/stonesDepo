@@ -5,77 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Продажа кирпича в Кемерово. Строительный, облицовочный, огнеупорный кирпич для домов, каминов, заборов. Опт и розница. Доставка по Кузбассу.">
+    <meta name="keywords" content="купить кирпич Кемерово, кирпич для строительства, кирпич для каминов, кирпич для забора, огнеупорный кирпич, облицовочный кирпич">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>depo</title>
+
+    <title>Кирпич в Кемерово – Продажа кирпича для строительства, каминов и заборов | KIRDEPO</title>
+ 
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="KIRDEPO – кирпич в Кемерово для дома, камина, забора" />
+    <meta property="og:description"
+        content="Широкий выбор кирпича для любых задач. Закажите с доставкой по Кемерово и Кузбассу." />
+    <meta property="og:image" content="https://kirdepo.netlify.app/images/preview.jpg" />
+    <meta property="og:url" content="https://kirdepo.netlify.app" />
+    <meta name="robots" content="index, follow" />
+
 </head>
 
 <body>
     @@include('./components/header.html')
-    <main>
-        <section>
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img class="slider__img" src="@img/house.jpeg" alt="">
-                        <h2 class="slider__title">Какой-то текст ствязан с домами</h2>
-                        <a href="./kirpich.html" class="slider__btn">Смотреть каталог</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="slider__img" src="@img/kamin.jpg" alt="">
-                        <h2 class="slider__title">Какой-то текст ствязан с каминами</h2>
-                        <a href="./kamini.html" class="slider__btn">Смотреть каталог</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="slider__img" src="@img/zabor.jpg" alt="">
-                        <h2 class="slider__title">Какой-то текст ствязан с заборами</h2>
-                        <a href="./zabor.html" class="slider__btn">Смотреть каталог</a>
-                    </div>
-                    ...
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
 
-                <!-- If we need navigation buttons -->
-                <!-- <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> -->
+    <main>
+        <section class="swiper">
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img class="slider__img" src="@img/house.jpeg" alt="">
+                    <h2 class="slider__title">Надежные и прочные кирпичи для возведения долговечных и теплых домов</h2>
+                    <a href="./kirpich.html" class="slider__btn">Смотреть каталог</a>
+                </div>
+                <div class="swiper-slide">
+                    <img class="slider__img" src="@img/kamin.jpg" alt="">
+                    <h2 class="slider__title">Огнеупорные кирпичи, выдерживающие высокие температуры, идеальны для
+                        каминов и печей</h2>
+                    <a href="./kamini.html" class="slider__btn">Смотреть каталог</a>
+                </div>
+                <div class="swiper-slide">
+                    <img class="slider__img" src="@img/zabor.jpg" alt="">
+                    <h2 class="slider__title">Эстетичные и устойчивые к погодным условиям кирпичи для прочных заборов.
+                    </h2>
+                    <a href="./zabor.html" class="slider__btn">Смотреть каталог</a>
+                </div>
+                ...
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
         </section>
         @@include('./components/products.html')
+ 
 
-        <section class="order">
+        <section class="order" id="order">
             <div class="container">
                 <h2 class="text-4xl font-bold text-center">Почему стоит заказать у нас?</h2>
 
                 <div class="order__advantages">
                     <div class="order__card rounded-2xl w-xs text-center">
                         <img class="order__img" src="@img/icons/car_contacts.png" alt="">
-                        <h3 class="text-2xl font-bold">You Use Your Property</h3>
-                        <p class="order__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-                            exercitationem at corporis neque consectetur illum molestias deleniti dolore, illo esse?</p>
+                        <h3 class="text-2xl font-bold">Широкий ассортимент</h3>
+                        <p class="order__descr">Предлагаем разнообразие кирпичей для любых строительных задач</p>
                     </div>
                     <div class="order__card rounded-2xl w-xs text-center">
                         <img class="order__img" src="@img/icons/car_contacts.png" alt="">
-                        <h3 class="text-2xl font-bold">You Use Your Property</h3>
-                        <p class="order__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-                            exercitationem at corporis neque consectetur illum molestias deleniti dolore, illo esse?</p>
+                        <h3 class="text-2xl font-bold">Гарантия качества</h3>
+                        <p class="order__descr">Вся продукция сертифицирована и соответствует стандартам.</p>
                     </div>
                     <div class="order__card rounded-2xl w-xs text-center">
                         <img class="order__img" src="@img/icons/car_contacts.png" alt="">
-                        <h3 class="text-2xl font-bold">You Use Your Property</h3>
-                        <p class="order__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-                            exercitationem at corporis neque consectetur illum molestias deleniti dolore, illo esse?</p>
+                        <h3 class="text-2xl font-bold">Быстрая доставка:</h3>
+                        <p class="order__descr">Оперативно доставим заказ по Кемерово и Кузбассу.</p>
                     </div>
                 </div>
 
                 <div class="order__form-wrapper">
                     <div class="order__left">
-                        <h2 class="text-xl font-bold uppercase">Не можете определится?</h2>
-                        <p class="text-xl uppercase">поможем подобрать идеальный вариант</p>
-                        <p class="">Оставьте свои контакты и мы свяжемся с вами</p>
+                        <h2 class="text-xl font-bold uppercase">Нужна помощь в выборе кирпича?</h2>
+                        <p class="text-xl uppercase">Оставьте контакты, и мы проконсультируем вас.</p>
+                        <!-- <p class="">Оставьте контакты, и мы проконсультируем вас.</p> -->
                     </div>
 
                     <form class="order__form">
@@ -108,8 +123,7 @@
                             </div>
                         </label>
                         <div class="content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis tempore iusto cumque
-                                magnam fugiat illum totam facilis quisquam pariatur quos!</p>
+                            <p>Да, на всю продукцию действует гарантия качества.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -126,7 +140,7 @@
                             </div>
                         </label>
                         <div class="content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, veritatis!</p>
+                            <p>Обсуждается индивидуально при крупных заказах.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
@@ -212,6 +226,9 @@
     </main>
 
     @@include('./components/footer.html')
+
+    @@include('./components/popup.html')
+
 
 
 
