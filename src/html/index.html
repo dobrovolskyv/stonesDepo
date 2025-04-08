@@ -12,213 +12,39 @@
 </head>
 
 <body>
-    <header>
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <img class="slider__img" src="@img/house.jpeg" alt="">
-                    <h2 class="slider__title">Какой-то текст ствязан с домами</h2>
-                    <a href="#" class="slider__btn">Заказать</a>
-                </div>
-                <div class="swiper-slide">
-                    <img class="slider__img" src="@img/kamin.jpg" alt="">
-                    <h2 class="slider__title">Какой-то текст ствязан с каминами</h2>
-                    <a href="#" class="slider__btn">Заказать</a>
-                </div>
-                <div class="swiper-slide">
-                    <img class="slider__img" src="@img/zabor.jpg" alt="">
-                    <h2 class="slider__title">Какой-то текст ствязан с заборами</h2>
-                    <a href="#" class="slider__btn">Заказать</a>
-                </div>
-                ...
-            </div>
-            <!-- If we need pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-
-            <!-- If we need navigation buttons -->
-            <!-- <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
-        </div>
-
-        <div class="nav__wrapper">
-
-            <div class="nav__inner">
-                <p class="header__logo">КИРПИЧНОЕ<br />ДЕПО</p>
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">
-                                Главная
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">
-                                О нас
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">
-                                Каталог
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">
-                                Заказать
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <button class="header__btn">Обратный звонок</button>
-            </div>
-
-
-
-        </div>
-
-    </header>
+    @@include('./components/header.html')
     <main>
-        <section class="products">
-            <div class="container">
-                <h2 class="text-4xl font-bold text-center">Наши продукты</h2>
-
-                <div class="products__wrapper">
-                    <div class="products__card text-center">
-                        <img class="products__img" src="@img/materials/stone1.jpg" alt="">
-                        <h3 class="text-2xl font-bold uppercase">печной</h3>
-                        <!-- <p class="products__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-                            exercitationem at corporis neque consectetur illum molestias deleniti dolore, illo esse?</p> -->
+        <section>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class="slider__img" src="@img/house.jpeg" alt="">
+                        <h2 class="slider__title">Какой-то текст ствязан с домами</h2>
+                        <a href="./kirpich.html" class="slider__btn">Смотреть каталог</a>
                     </div>
-
-                    <!-- <div class="card">
-                        <img class="products__img" src="@img/materials/stone1.jpg" alt="">
-                        <h3 class="text-2xl font-bold uppercase">ПЕЧНОЙ</h3>
-                        <div class="card__content">
-                            <p class="card__title">Основные зарактеристики продукта:</p>
-                            <ul class="card__list">
-                                <li>Марка прочности</li>
-                                <li>Размер в мм</li>
-                                <li>Вес 1 шт</li>
-                                <li>Количество шт в кубе</li>
-                                <li>Кол-во шт в м2 кладки</li>
-                                <li>Цена за 1 шт/куб/м2</li>
-                            </ul>
-                            <p class="card__description">
-                            </p>
-                        </div>
-                    </div> -->
-                    <div class="card">
-                        <img class="products__img" src="@img/materials/stone2.jpg" alt="">
-                        <h3 class="card__text text-2xl font-bold uppercase">ОБЛИЦОВОЧНЫЙ</h3>
-                        <div class="card__content">
-                            <p class="card__title">Основные зарактеристики продукта:</p>
-                            <ul class="card__list">
-                                <li>Марка прочности</li>
-                                <li>Размер в мм</li>
-                                <li>Вес 1 шт</li>
-                                <li>Количество шт в кубе</li>
-                                <li>Кол-во шт в м2 кладки</li>
-                                <li>Цена за 1 шт/куб/м2</li>
-                            </ul>
-                            <a href="@img/materials/stone3.jpg" class="button" download="@img/materials/stone2.jpg">
-
-                                <img class="button__icon" src="@img/icons/download.png" alt="">
-                            </a>
-                            <p class="card__description">
-                            </p>
-                        </div>
+                    <div class="swiper-slide">
+                        <img class="slider__img" src="@img/kamin.jpg" alt="">
+                        <h2 class="slider__title">Какой-то текст ствязан с каминами</h2>
+                        <a href="./kamini.html" class="slider__btn">Смотреть каталог</a>
                     </div>
-                    <div class="card">
-                        <img class="products__img" src="@img/materials/stone3.jpg" alt="">
-                        <h3 class="card__text text-2xl font-bold uppercase">ОБЛИЦОВОЧНЫЙ</h3>
-                        <div class="card__content">
-                            <p class="card__title">Основные зарактеристики продукта:</p>
-                            <ul class="card__list">
-                                <li>Марка прочности</li>
-                                <li>Размер в мм</li>
-                                <li>Вес 1 шт</li>
-                                <li>Количество шт в кубе</li>
-                                <li>Кол-во шт в м2 кладки</li>
-                                <li>Цена за 1 шт/куб/м2</li>
-                            </ul>
-                            <a href="@img/materials/stone2.jpg" class="button" download="@img/materials/stone2.jpg">
-
-                                <img class="button__icon" src="@img/icons/download.png" alt="">
-                            </a>
-                            <p class="card__description">
-                            </p>
-                        </div>
+                    <div class="swiper-slide">
+                        <img class="slider__img" src="@img/zabor.jpg" alt="">
+                        <h2 class="slider__title">Какой-то текст ствязан с заборами</h2>
+                        <a href="./zabor.html" class="slider__btn">Смотреть каталог</a>
                     </div>
-                    <div class="card">
-                        <img class="products__img" src="@img/house.jpeg" alt="">
-                        <h3 class="card__text text-2xl font-bold uppercase">проект дома</h3>
-                        <div class="card__content">
-                            <p class="card__title">Основные зарактеристики продукта:</p>
-                            <ul class="card__list">
-                                <li>Марка прочности</li>
-                                <li>Размер в мм</li>
-                                <li>Вес 1 шт</li>
-                                <li>Количество шт в кубе</li>
-                                <li>Кол-во шт в м2 кладки</li>
-                                <li>Цена за 1 шт/куб/м2</li>
-                            </ul>
-                            <a href="@img/materials/stone2.jpg" class="button" download="@img/materials/stone2.jpg">
-
-                                <img class="button__icon" src="@img/icons/download.png" alt="">
-                            </a>
-                            <p class="card__description">
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="products__img" src="@img/zabor.jpg" alt="">
-                        <h3 class="card__text text-2xl font-bold uppercase">проект забора
-                        </h3>
-                        <div class="card__content">
-                            <p class="card__title">Основные зарактеристики продукта:</p>
-                            <ul class="card__list">
-                                <li>Марка прочности</li>
-                                <li>Размер в мм</li>
-                                <li>Вес 1 шт</li>
-                                <li>Количество шт в кубе</li>
-                                <li>Кол-во шт в м2 кладки</li>
-                                <li>Цена за 1 шт/куб/м2</li>
-                            </ul>
-                            <a href="@img/materials/stone2.jpg" class="button" download="@img/materials/stone2.jpg">
-
-                                <img class="button__icon" src="@img/icons/download.png" alt="">
-                            </a>
-                            <p class="card__description">
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="products__img" src="@img/kamin.jpg" alt="">
-                        <h3 class="card__text text-2xl font-bold uppercase">проект печи</h3>
-                        <div class="card__content">
-                            <p class="card__title">Основные зарактеристики продукта:</p>
-                            <ul class="card__list">
-                                <li>Марка прочности</li>
-                                <li>Размер в мм</li>
-                                <li>Вес 1 шт</li>
-                                <li>Количество шт в кубе</li>
-                                <li>Кол-во шт в м2 кладки</li>
-                                <li>Цена за 1 шт/куб/м2</li>
-                            </ul>
-                            <a href="@img/materials/stone2.jpg" class="button" download="@img/materials/stone2.jpg">
-
-                                <img class="button__icon" src="@img/icons/download.png" alt="">
-                            </a>
-                            <p class="card__description">
-                            </p>
-                        </div>
-                    </div>
+                    ...
                 </div>
-            </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+            </div>
         </section>
+        @@include('./components/products.html')
 
         <section class="order">
             <div class="container">
@@ -385,40 +211,9 @@
 
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__nav">
-                <nav class="header__nav">
-                    <ul class="header__nav-list text-white">
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">
-                                Главная
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">
-                                О нас
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">
-                                Каталог
-                            </a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">
-                                Заказать
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-           
-            <h3 class="footer__title text-xl font-bold text-center text-white">Компания "КИРПИЧНОЕ ДЕПО"</h3>
-            <p class="footer__subtitle text-sm text-center text-white">КИРПИЧИ. ДОМА. ПЕЧИ</p>
-           
-        </div>
-    </footer>
+    @@include('./components/footer.html')
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
